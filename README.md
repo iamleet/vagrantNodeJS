@@ -1,10 +1,11 @@
 # vagrantNodeJS
 A vagrant build which setups NodeJS / NPM on a Centos7 box with the weekly updates and guest tools for oracle. 
 
-###Make sure to have the vagrant plugin installed. 
-<vagrant plugin install vagrant-vbguest>
-
-##A bug exists with ssh and the permissions on the authoized_keys file.
+Make sure to have the vagrant plugin installed. 
+``````shell
+vagrant plugin install vagrant-vbguest
+``````
+###A bug exists with ssh and the permissions on the authoized_keys file.
 
 If you experience this issue then check out this thread on github:
 
@@ -16,9 +17,9 @@ vagrant ssh
 password: vagrant 
 chmod 0600 ~/.ssh/authorized_keys; exit>
 Next, stop the box 
-<vagrant halt>
+vagrant halt
 Last, provision the box 
-<vagrant up --provision> 
+vagrant up --provision 
 ``````
 
 ###Ideally 
