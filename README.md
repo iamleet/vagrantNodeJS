@@ -1,5 +1,12 @@
-# vagrantNodeJS
-A vagrant build which setups NodeJS / NPM / MongoDB on a Centos7 box with the weekly updates and guest tools for oracle. 
+# vagrantNodeJS - NOLEG stack
+A vagrant build which setups Nginx / NodeJS / NPM / MongoDB on a Centos7 box with the weekly updates and guest tools for oracle. 
+
+Get the right box after cloning this repo. 
+``````shell
+vagrant box add centos7 https://github.com/holms/vagrant-centos7-box/releases/download/7.1.1503.001/CentOS-7.1.1503-x86_64-netboot.box
+vagrant up
+``````
+https://github.com/holms/vagrant-centos7-box/releases
 
 Make sure to have the vagrant plugin installed. 
 ``````shell

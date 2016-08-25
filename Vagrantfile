@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
   # The most common configuration options are documented and commented below.
   # For a complete reference, please see the online documentation at
   # https://docs.vagrantup.com.
-  
+
   #config.ssh.forward_agent = true
   #config.ssh.private_key_path = "/home/vader/vagrant/vagrantNodeJS/.ssh/id_rsa"
 
