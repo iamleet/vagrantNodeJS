@@ -24,7 +24,7 @@ vagrant up --provision
 
 ###Ideally 
 
-Generate the keys on your own then point add this to the Vagrantfile
+Generate the keys on your own then uncomment and modify this line inside of the Vagrant file accordingly.
 ```````shell
 config.ssh.private_key_path = " /home/vader/vagrant/vagrantNodeJS/.ssh/id_rsa"
 ```````
