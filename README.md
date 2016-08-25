@@ -15,7 +15,7 @@ It's caused basically by a permission issue after it auto-gens the keys, the wor
 ``````shell
 vagrant ssh 
 password: vagrant 
-chmod 0600 ~/.ssh/authorized_keys; exit>
+chmod 0600 ~/.ssh/authorized_keys; exit
 Next, stop the box 
 vagrant halt
 Last, provision the box 
