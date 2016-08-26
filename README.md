@@ -3,21 +3,19 @@ A vagrant build which setups Nginx / NodeJS / NPM / MongoDB on a Centos7 box wit
 
 Get the right box after cloning this repo. 
 ``````shell
-vagrant box add centos7 https://github.com/holms/vagrant-centos7-box/releases/download/7.1.1503.001/CentOS-7.1.1503-x86_64-netboot.box
 vagrant up
 ``````
-https://github.com/holms/vagrant-centos7-box/releases
+## Windows notes
 
 Make sure to have the vagrant plugin installed. 
 ``````shell
 vagrant plugin install vagrant-vbguest
 ``````
-###A bug exists with ssh and the permissions on the authoized_keys file.
+You must have rsync and ssh installed and avialble via cmd line, the best way to accoplish this imo is cygwin. If you don't add cygwin to the windows path you will have issues with improperly formatted directory strings while using rsync. 
 
-If you experience this issue then check out this thread on github:
+https://www.cygwin.com/
 
-https://github.com/mitchellh/vagrant/issues/7610
-
+A bug exists with ssh and the permissions on the authoized_keys file.
 It's caused basically by a permission issue after it auto-gens the keys, the workaround is as follows:
 ``````shell
 vagrant ssh 
