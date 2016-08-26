@@ -11,7 +11,7 @@ Make sure to have the vagrant plugin installed.
 ``````shell
 vagrant plugin install vagrant-vbguest
 ``````
-You must have rsync and ssh installed and avialble via cmd line, the best way to accoplish this imo is cygwin. If you don't add cygwin to the windows path you will have issues with improperly formatted directory strings while using rsync. 
+You must have rsync and ssh installed and avialable via cmd line, the best way to accomplish this imo is cygwin. If you don't add cygwin to the windows path you will have issues with improperly formatted directory strings while using rsync. 
 
 https://www.cygwin.com/
 
@@ -21,10 +21,10 @@ It's caused basically by a permission issue after it auto-gens the keys, the wor
 vagrant ssh 
 password: vagrant 
 chmod 0600 ~/.ssh/authorized_keys; exit
-Next, stop the box 
-vagrant halt
-Last, provision the box 
-vagrant up --provision 
+``````
+Restart and provision 
+``````shell
+vagrant reload --provision
 ``````
 
 ###Ideally 
