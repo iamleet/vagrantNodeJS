@@ -1,4 +1,4 @@
-# vagrantNodeJS - NOLEG stack
+# vagrantNodeJS
 A vagrant build which setups Nginx / NodeJS / NPM / MongoDB on a Centos7 box with the weekly updates and guest tools for oracle. 
 
 Get the right box after cloning this repo. 
